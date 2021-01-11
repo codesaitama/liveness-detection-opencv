@@ -1,0 +1,18 @@
+
+[Command to train and save the model.]
+>>> python train_liveness.py -d ./dataset/ -m ./model -l le.pickle -p testplot
+
+[Command to run the liveness check.]
+>>> python liveness_demo.py --model ./model -l le.pickle -d face_detector
+
+
+[Command to gather images using the webcam.]
+>>> python gather_examples.py -i 0 -d face_detector -o test_
+
+[Command to predict the image being fake or real]
+python liveness_photo_demo.py -i test_/wer.jpeg
+
+
+Install Libraies
+--------------------
+pip install keras tensorflow numpy imutils matplotlib opencv_python
