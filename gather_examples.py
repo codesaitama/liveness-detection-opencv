@@ -32,9 +32,11 @@ net = cv2.dnn.readNetFromCaffe(protoPath, modelPath)
 # open a pointer to the video file stream and initialize the total
 # number of frames read and saved thus far
 vs = cv2.VideoCapture(args["input"])
+
 read = 0
+
 #Image name using the count
-saved = 0
+saved = 2645 # Use as the image name. 0
 
 # loop over frames from the video file stream
 while True:
