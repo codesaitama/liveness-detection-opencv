@@ -1,4 +1,5 @@
 /.env
 /dataset
 /videos
-/test_
+/collector
+/check_images
